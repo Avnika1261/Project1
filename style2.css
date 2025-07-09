@@ -1,0 +1,96 @@
+/* Apply a calming background and general font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: antiquewhite;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Center the main heading */
+h1 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 40px;
+}
+
+/* Style the form container */
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #f7fbfc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style fieldsets and legends */
+fieldset {
+    border: 2px solid #ade8f4;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #023e8a;
+    padding: 0 10px;
+}
+
+/* Label and input spacing */
+label {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    color: #03045e;
+}
+
+input, select, textarea {
+    width: calc(100% - 190px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #90e0ef;
+    font-size: 1em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit and reset buttons */
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    label, input, select, textarea {
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+}

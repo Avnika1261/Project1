@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style2.css" />
+    <title>Booking Form</title>
+
+</head>
+<body>
+    
+    <h1>Schedule Your Holiday on Paradise Island</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" required/>
+        <br /><br />
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" placeholder="abc@gmail.com" name="email" />
+        <br /><br />
+
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" placeholder="+91 9335267537" name="phone number" />
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="date of birth" />
+        <br /><br />
+        </fieldset>
+        
+        <fieldset>
+            <legend>Trip Details</legend>
+            <label for="arr">Arrival:</label>
+        <input type="datetime-local" id="arr" name="arrival" />
+        <br /><br />
+
+        <label for="dep">Departure:</label>
+        <input type="datetime-local" id="dep" name="departure" />
+        <br /><br />
+
+        <label for="trl">Number of Travelers</label>
+        <input type="number" id="trl" name="no. of traveleres" />
+        <br /><br />
+
+        <label for="prefernce">Accommodation Preference:</label>
+        <select id="prefernce" name="accommodation">
+            <optgroup label="hotels">
+                <option value="3-star">3-star</option>
+                <option value="4-star">4-star</option>
+                <option value="5-star">5-star</option>
+            </optgroup>
+            <option value="hotel">Hotel</option>
+            <option value="resort">Resort</option>
+            <option value="guesthouse">Guest House</option>
+            <option value="villa" selected>Villa</option>
+        </select>
+        <br /><br />
+
+        <fieldset>
+        <legend>Preffered Activities</legend><br />
+        <input type="checkbox" id="snork" name="activity" value="snorkelling"/>
+        <label for="snork">Snorkelling</label><br />
+        <input type="checkbox" id="hiking" name="activity" value="hiking"/>
+        <label for="hiking">Hiking</label><br />
+        <input type="checkbox" id="spa" name="activity" value="spa"/>
+        <label for="spa">Spa</label>
+        </fieldset>
+        <br /><br />
+
+        <label><b>Baby on Board?</b></label><br />
+        <input type="radio" name="baby" value="yes"/>
+        <label>Yes</label><br />
+        <input type="radio" name="baby" value="no"/>
+        <label>No</label>
+        <br /><br />
+
+        <label><b>Special Requests</b></label>
+        <textarea cols="40" rows="10" name="requests"></textarea>
+        <br /><br />
+        </fieldset>
+       <br /><br />
+        <!-- <input type="submit" />
+        <input type="reset" /> -->
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
